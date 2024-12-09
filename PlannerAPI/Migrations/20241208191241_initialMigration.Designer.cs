@@ -12,7 +12,7 @@ using PlannerAPI;
 namespace PlannerAPI.Migrations
 {
     [DbContext(typeof(PlannerDbContext))]
-    [Migration("20241208175248_initialMigration")]
+    [Migration("20241208191241_initialMigration")]
     partial class initialMigration
     {
         /// <inheritdoc />

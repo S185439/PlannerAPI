@@ -57,4 +57,17 @@ public class WindowController : ControllerBase
         return NoContent();
     }
 
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteWindow(Guid id)
+    {
+        var window = await _context.Windows.FirstOrDefaultAsync(w => w.Id == id);
+        if (window == null)
+        {
+            return NotFound();
+        }
+
+        _context.Windows.Remove(window);
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
 }
