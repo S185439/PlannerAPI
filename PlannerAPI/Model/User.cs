@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace PlannerAPI.Model
+﻿namespace PlannerAPI.Model
 {
     public class User
     {

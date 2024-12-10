@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using PlannerAPI.Model;
 
 namespace PlannerAPI;
@@ -16,7 +15,5 @@ public class PlannerDbContext : DbContext
     public DbSet<Event> Events { get; set; }
     public DbSet<Subscribtion> Subscribtions { get; set; }
     public DbSet<Window> Windows { get; set; }
-
-
 }
 
